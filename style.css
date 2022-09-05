@@ -8,14 +8,19 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+  color: #02020a;
 }
+
+/* Header */
 
 header {
   position: sticky;
+  top: 0;
   height: 4.5rem;
   text-align: center;
   background-color: #069e2d;
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.4);
+  z-index: 5;
 }
 
 header h1 {
@@ -24,10 +29,71 @@ header h1 {
   color: #fff;
 }
 
+header img {
+  height: 2rem;
+  vertical-align: middle;
+  color: white;
+}
+
+/* Main */
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fcf7f8;
+  padding: 1rem 2rem;
+  margin: 0.5rem auto;
+  width: 350px;
+  height: 300px;
+  border-radius: 1rem;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.card--question {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.card--btn {
+  text-align: center;
+  background-color: #069e2d;
+  color: #fff;
+  border-radius: 0.25rem;
+  padding: 1rem 0.5rem;
+  width: 50%;
+  cursor: pointer;
+}
+
+.card--btn:hover,
+.card--btn:active,
+.card--btn:active {
+  background-color: #1c572a;
+}
+
+.card--category {
+  padding: 0;
+  margin-top: 2rem;
+  display: flex;
+  align-self: flex-start;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.card--category li {
+  background-color: gainsboro;
+  border: 1px solid rgb(120, 120, 120);
+  border-radius: 0.25rem;
+  padding: 0.25rem 0.5rem;
+}
+
+/* Footer */
+
 footer {
   position: fixed;
   bottom: 0;
   height: 4rem;
   width: 100%;
-  background-color: bisque;
+  background-color: #31d843;
 }
