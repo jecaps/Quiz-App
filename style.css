@@ -109,32 +109,32 @@ footer nav {
   bottom: 0;
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  /* padding: 1rem; */
-  /* height: 3.5rem; */
   width: 100%;
-  border-top: 1px solid #317b22;
+  border-top: 1px solid #11270b;
   background-color: #fff;
 }
 
 footer nav a {
   text-align: center;
+  vertical-align: middle;
   width: 100%;
-  height: 1.25rem;
+  padding: 1rem 0;
 }
 
-/* footer nav a svg:active,
-footer nav a svg:hover,
+footer nav a:active,
+footer nav a svg:active,
+footer nav a:focus,
 footer nav a svg:focus {
-  fill: #069e2d !important;
-  padding: 0.5rem;
-  border-radius: 50%;
-  background-color: #317b22 !important;
+  background-color: #069e2d;
+  fill: #fff !important;
+}
+
+footer nav a svg {
+  height: 40px;
+  width: 40px;
+}
+
+/* .icon--user svg {
   height: 25px;
   width: 25px;
 } */
-
-.icon--user svg {
-  height: 25px;
-  width: 25px;
-}
