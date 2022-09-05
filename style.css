@@ -51,7 +51,7 @@ main {
   background-color: #f4f4f4;
   padding: 0.5rem 1rem;
   margin: 1.5rem auto;
-  width: 350px;
+  width: 90%;
   height: 300px;
   border-radius: 1rem;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
@@ -74,7 +74,7 @@ main {
   text-align: center;
   background-color: #069e2d;
   color: #fff;
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   padding: 1rem 0.5rem;
   width: 50%;
   cursor: pointer;
@@ -98,7 +98,7 @@ main {
 .card--category li {
   background-color: #e3e3e3;
   border: 1px solid rgb(201, 201, 201);
-  border-radius: 0.25rem;
+  border-radius: 0.5rem;
   padding: 0.25rem 0.5rem;
 }
 
@@ -110,8 +110,8 @@ footer nav {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  padding: 1rem;
-  height: 3.5rem;
+  /* padding: 1rem; */
+  /* height: 3.5rem; */
   width: 100%;
   border-top: 1px solid #317b22;
   background-color: #fff;
@@ -123,16 +123,16 @@ footer nav a {
   height: 1.25rem;
 }
 
-footer nav a svg:active,
+/* footer nav a svg:active,
 footer nav a svg:hover,
 footer nav a svg:focus {
-  fill: #fff !important;
-  padding: 0.25rem;
+  fill: #069e2d !important;
+  padding: 0.5rem;
   border-radius: 50%;
-  background-color: #069e2d !important;
-  /* height: 2.5rem;
-  width: 2.5rem; */
-}
+  background-color: #317b22 !important;
+  height: 25px;
+  width: 25px;
+} */
 
 .icon--user svg {
   height: 25px;
