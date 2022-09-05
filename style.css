@@ -90,10 +90,19 @@ header img {
 
 /* Footer */
 
-footer {
+footer nav {
   position: fixed;
   bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* padding: 1rem; */
   height: 4rem;
   width: 100%;
   background-color: #31d843;
+}
+
+footer nav a {
+  color: #092b0d;
+  /* font-size: 3rem; */
 }
