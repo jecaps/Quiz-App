@@ -1,0 +1,19 @@
+@import "style.css";
+@import "components/card.css";
+@import "components/header.css";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  color: #02020a;
+  background-color: #e3e3e3;
+}
+
+main {
+  margin: 2rem 0 6rem 0;
+}
