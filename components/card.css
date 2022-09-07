@@ -17,10 +17,17 @@
   position: absolute;
   top: -10px;
   right: 10px;
-  fill: #3cb759;
+  fill: #828a95;
 }
 
-.card__bookmark--marked svg {
+.card__bookmark:hover,
+.card__bookmark:active,
+.card__bookmark:focus {
+  cursor: pointer;
+  fill: #df2935;
+}
+
+.card__bookmark svg {
   height: 50px;
   width: 50px;
 }
@@ -61,7 +68,7 @@
 
 .card__category li {
   background-color: #e3e3e3;
-  border: 1px solid rgb(201, 201, 201);
+  border: 1px solid #c9c9c9;
   border-radius: 0.5rem;
   padding: 0.25rem 0.5rem;
 }
