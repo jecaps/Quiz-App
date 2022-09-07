@@ -50,7 +50,7 @@
 .footer__nav__link:hover,
 .footer__nav__link__icon:hover {
   background-color: #069e2d;
-  fill: #fff !important;
+  fill: #fff;
 }
 
 .footer__nav__link__icon {
