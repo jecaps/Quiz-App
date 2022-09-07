@@ -45,7 +45,9 @@ footer nav a {
 footer nav a:active,
 footer nav a svg:active,
 footer nav a:focus,
-footer nav a svg:focus {
+footer nav a svg:focus,
+footer nav a:hover,
+footer nav a svg:hover {
   background-color: #069e2d;
   fill: #fff !important;
 }
