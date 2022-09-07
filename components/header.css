@@ -12,6 +12,6 @@
   margin: 0;
   padding: 1rem 0;
   color: #eeecec;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
+  font-family: "Fredoka One", cursive;
+  -webkit-text-stroke: 1px #1c572a;
 }
