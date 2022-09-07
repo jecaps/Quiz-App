@@ -31,7 +31,7 @@
   fill: #df2935;
 }
 
-.card__bookmark svg {
+.card__bookmark__icon {
   height: 50px;
   width: 50px;
 }
@@ -70,7 +70,7 @@
   list-style: none;
 }
 
-.card__category li {
+.card__category__item {
   background-color: #e3e3e3;
   border: 1px solid #c9c9c9;
   border-radius: 0.5rem;
