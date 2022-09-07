@@ -1,3 +1,8 @@
+:root {
+  --red: #df2935;
+  --border-radius-sm: 0.5rem;
+}
+
 .card {
   position: relative;
   display: flex;
@@ -21,14 +26,14 @@
 }
 
 .card__bookmark--marked {
-  fill: #df2935;
+  fill: var(--red);
 }
 
 .card__bookmark:hover,
 .card__bookmark:active,
 .card__bookmark:focus {
   cursor: pointer;
-  fill: #df2935;
+  fill: var(--red);
 }
 
 .card__bookmark__icon {
@@ -47,7 +52,7 @@
   text-align: center;
   background-color: #069e2d;
   color: #fff;
-  border-radius: 0.5rem;
+  border-radius: var(--border-radius-sm);
   padding: 1rem 0.5rem;
   width: 50%;
   cursor: pointer;
@@ -73,6 +78,6 @@
 .card__category__item {
   background-color: #e3e3e3;
   border: 1px solid #c9c9c9;
-  border-radius: 0.5rem;
+  border-radius: var(--border-radius-sm);
   padding: 0.25rem 0.5rem;
 }
