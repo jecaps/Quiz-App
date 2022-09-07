@@ -35,7 +35,7 @@
   background-color: #fff;
 }
 
-.footer__nav__link {
+.footer__link {
   text-align: center;
   vertical-align: middle;
   width: 100%;
@@ -43,17 +43,17 @@
   fill: #11270b;
 }
 
-.footer__nav__link:active,
-.footer__nav__link__icon:active,
-.footer__nav__link:focus,
-.footer__nav__link__icon:focus,
-.footer__nav__link:hover,
-.footer__nav__link__icon:hover {
+.footer__link:active,
+.footer__icon:active,
+.footer__link:focus,
+.footer__icon:focus,
+.footer__link:hover,
+.footer__icon:hover {
   background-color: #069e2d;
   fill: #fff;
 }
 
-.footer__nav__link__icon {
+.footer__icon {
   height: 40px;
   width: 40px;
 }
