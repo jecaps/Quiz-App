@@ -25,7 +25,7 @@
 
 /* Footer */
 
-footer nav {
+.footer__nav {
   position: fixed;
   bottom: 0;
   display: flex;
@@ -35,24 +35,25 @@ footer nav {
   background-color: #fff;
 }
 
-footer nav a {
+.footer__nav__link {
   text-align: center;
   vertical-align: middle;
   width: 100%;
   padding: 1rem 0;
+  fill: #11270b;
 }
 
-footer nav a:active,
-footer nav a svg:active,
-footer nav a:focus,
-footer nav a svg:focus,
-footer nav a:hover,
-footer nav a svg:hover {
+.footer__nav__link:active,
+.footer__nav__link__icon:active,
+.footer__nav__link:focus,
+.footer__nav__link__icon:focus,
+.footer__nav__link:hover,
+.footer__nav__link__icon:hover {
   background-color: #069e2d;
   fill: #fff !important;
 }
 
-footer nav a svg {
+.footer__nav__link__icon {
   height: 40px;
   width: 40px;
 }
