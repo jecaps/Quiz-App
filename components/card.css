@@ -20,6 +20,10 @@
   fill: #828a95;
 }
 
+.card__bookmark--marked {
+  fill: #df2935;
+}
+
 .card__bookmark:hover,
 .card__bookmark:active,
 .card__bookmark:focus {
