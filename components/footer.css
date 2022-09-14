@@ -1,0 +1,32 @@
+.footer__nav {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  border-top: 1px solid #11270b;
+  background-color: #fff;
+}
+
+.footer__link {
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+  padding: 1rem 0;
+  fill: #11270b;
+}
+
+.footer__link:active,
+.footer__icon:active,
+.footer__link:focus,
+.footer__icon:focus,
+.footer__link:hover,
+.footer__icon:hover {
+  background-color: #069e2d;
+  fill: #fff;
+}
+
+.footer__icon {
+  height: 2.5rem;
+  width: 2.5rem;
+}
