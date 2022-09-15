@@ -19,7 +19,7 @@
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
 }
 
-.card__icon {
+.card__bookmark {
   position: absolute;
   top: -10px;
   right: 10px;
@@ -28,13 +28,13 @@
   width: 50px;
 }
 
-.card__icon--marked {
+.card__bookmark--marked {
   fill: var(--red);
 }
 
-.card__icon:hover,
-.card__icon:active,
-.card__icon:focus {
+.card__bookmark:hover,
+.card__bookmark:active,
+.card__bookmark:focus {
   cursor: pointer;
   fill: var(--red);
 }
