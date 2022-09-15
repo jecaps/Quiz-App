@@ -8,8 +8,16 @@ body {
   font-family: "Roboto", sans-serif;
   color: #02020a;
   background-color: #e3e3e3;
+  min-width: 20rem;
 }
 
 main {
   margin: 2rem 0 6rem 0;
+}
+
+@media (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
