@@ -7,9 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quiz App</title>
   <link rel="stylesheet" href="style.css">
-  <!-- <script src="./index.js" defer></script> -->
-  <script src="../bookmark.js" defer></script>
-  <script src="https://kit.fontawesome.com/ae872b74f7.js" crossorigin="anonymous" defer></script>
+  <script src="./scripts/card.js" defer></script>
 </head>
 
 <body>
@@ -21,15 +19,15 @@
 
   <main data-js="main">
     <div class="card">
-      <div class="card__bookmark">
-        <svg class="card__icon " xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25"
-          viewBox="0 0 30 30">
-          <path d="M23,27l-8-7l-8,7V5c0-1.105,0.895-2,2-2h12c1.105,0,2,0.895,2,2V27z">
-          </path>
-        </svg>
-      </div>
+      <svg data-js="bookmark" class="card__bookmark " xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25"
+        height="25" viewBox="0 0 30 30">
+        <path d="M23,27l-8-7l-8,7V5c0-1.105,0.895-2,2-2h12c1.105,0,2,0.895,2,2V27z">
+        </path>
+      </svg>
+
       <p class="card__question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, maiores?</p>
       <a class="card__btn">Show Answer</a>
+      <p card="card__answer">The Answer</p>
 
       <ul class="card__category">
         <li class="card__item">#hmtl</li>
@@ -39,15 +37,15 @@
     </div>
 
     <div class="card">
-      <div class="card__bookmark">
-        <svg class="card__icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25"
-          viewBox="0 0 30 30">
-          <path d="M23,27l-8-7l-8,7V5c0-1.105,0.895-2,2-2h12c1.105,0,2,0.895,2,2V27z">
-          </path>
-        </svg>
-      </div>
+      <svg data-js="bookmark" class="card__bookmark " xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25"
+        height="25" viewBox="0 0 30 30">
+        <path d="M23,27l-8-7l-8,7V5c0-1.105,0.895-2,2-2h12c1.105,0,2,0.895,2,2V27z">
+        </path>
+      </svg>
+
       <p class="card__question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, maiores?</p>
       <a class="card__btn">Show Answer</a>
+      <p card="card__answer">The Answer</p>
 
       <ul class="card__category">
         <li class="card__item">#hmtl</li>
@@ -57,15 +55,15 @@
     </div>
 
     <div class="card">
-      <div class="card__bookmark">
-        <svg class="card__icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25"
-          viewBox="0 0 30 30">
-          <path d="M23,27l-8-7l-8,7V5c0-1.105,0.895-2,2-2h12c1.105,0,2,0.895,2,2V27z">
-          </path>
-        </svg>
-      </div>
+      <svg data-js="bookmark" class="card__bookmark " xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25"
+        height="25" viewBox="0 0 30 30">
+        <path d="M23,27l-8-7l-8,7V5c0-1.105,0.895-2,2-2h12c1.105,0,2,0.895,2,2V27z">
+        </path>
+      </svg>
+
       <p class="card__question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, maiores?</p>
       <a class="card__btn">Show Answer</a>
+      <p card="card__answer">The Answer</p>
 
       <ul class="card__category">
         <li class="card__item">#hmtl</li>
@@ -75,32 +73,15 @@
     </div>
 
     <div class="card">
-      <div class="card__bookmark">
-        <svg class="card__icon card__icon--marked" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25"
-          height="25" viewBox="0 0 30 30">
-          <path d="M23,27l-8-7l-8,7V5c0-1.105,0.895-2,2-2h12c1.105,0,2,0.895,2,2V27z">
-          </path>
-        </svg>
-      </div>
-      <p class="card__question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, maiores?</p>
-      <a class="card__btn">Show Answer</a>
+      <svg data-js="bookmark" class="card__bookmark " xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25"
+        height="25" viewBox="0 0 30 30">
+        <path d="M23,27l-8-7l-8,7V5c0-1.105,0.895-2,2-2h12c1.105,0,2,0.895,2,2V27z">
+        </path>
+      </svg>
 
-      <ul class="card__category">
-        <li class="card__item">#hmtl</li>
-        <li class="card__item">#css</li>
-        <li class="card__item">#flexbox</li>
-      </ul>
-    </div>
-    <div class="card">
-      <div class="card__bookmark">
-        <svg class="card__icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25"
-          viewBox="0 0 30 30">
-          <path d="M23,27l-8-7l-8,7V5c0-1.105,0.895-2,2-2h12c1.105,0,2,0.895,2,2V27z">
-          </path>
-        </svg>
-      </div>
       <p class="card__question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, maiores?</p>
       <a class="card__btn">Show Answer</a>
+      <p card="card__answer">The Answer</p>
 
       <ul class="card__category">
         <li class="card__item">#hmtl</li>
@@ -110,15 +91,15 @@
     </div>
 
     <div class="card">
-      <div class="card__bookmark">
-        <svg class="card__icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25"
-          viewBox="0 0 30 30">
-          <path d="M23,27l-8-7l-8,7V5c0-1.105,0.895-2,2-2h12c1.105,0,2,0.895,2,2V27z">
-          </path>
-        </svg>
-      </div>
+      <svg data-js="bookmark" class="card__bookmark " xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25"
+        height="25" viewBox="0 0 30 30">
+        <path d="M23,27l-8-7l-8,7V5c0-1.105,0.895-2,2-2h12c1.105,0,2,0.895,2,2V27z">
+        </path>
+      </svg>
+
       <p class="card__question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, maiores?</p>
       <a class="card__btn">Show Answer</a>
+      <p card="card__answer">The Answer</p>
 
       <ul class="card__category">
         <li class="card__item">#hmtl</li>
@@ -128,15 +109,15 @@
     </div>
 
     <div class="card">
-      <div class="card__bookmark">
-        <svg class="card__icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25"
-          viewBox="0 0 30 30">
-          <path d="M23,27l-8-7l-8,7V5c0-1.105,0.895-2,2-2h12c1.105,0,2,0.895,2,2V27z">
-          </path>
-        </svg>
-      </div>
+      <svg data-js="bookmark" class="card__bookmark " xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25"
+        height="25" viewBox="0 0 30 30">
+        <path d="M23,27l-8-7l-8,7V5c0-1.105,0.895-2,2-2h12c1.105,0,2,0.895,2,2V27z">
+        </path>
+      </svg>
+
       <p class="card__question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, maiores?</p>
       <a class="card__btn">Show Answer</a>
+      <p card="card__answer">The Answer</p>
 
       <ul class="card__category">
         <li class="card__item">#hmtl</li>
@@ -145,24 +126,9 @@
       </ul>
     </div>
 
-    <div class="card">
-      <div class="card__bookmark">
-        <svg class="card__icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25"
-          viewBox="0 0 30 30">
-          <path d="M23,27l-8-7l-8,7V5c0-1.105,0.895-2,2-2h12c1.105,0,2,0.895,2,2V27z">
-          </path>
-        </svg>
-      </div>
-      <p class="card__question">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, maiores?</p>
-      <a class="card__btn">Show Answer</a>
 
-      <ul class="card__category">
-        <li class="card__item">#hmtl</li>
-        <li class="card__item">#css</li>
-        <li class="card__item">#flexbox</li>
-      </ul>
 
-    </div>
+
   </main>
 
   <footer class="footer">
