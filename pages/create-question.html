@@ -8,7 +8,6 @@
   <title>Quiz App</title>
   <link rel="stylesheet" href="../style.css">
   <script src="../scripts/form.js" defer></script>
-  <script src="https://kit.fontawesome.com/ae872b74f7.js" crossorigin="anonymous" defer></script>
 </head>
 
 <body>
@@ -21,26 +20,26 @@
   <main data-js="main">
 
     <form action="/" data-js="form">
-      <div>
-        <label for="question">Your Question: </label>
-        <textarea name="question" id="question" cols="30" rows="10" maxlength="150"
+      <div class="form__question">
+        <label class="form__label" for="question">Your Question: </label>
+        <textarea class="form__input" name="question" id="question" cols="30" rows="6" maxlength="150"
           placeholder="Write a question"></textarea>
-        <p>150 characters left</p>
+        <p class="form__char-indicator">150 characters left</p>
       </div>
 
-      <div>
-        <label for="answer">Your Answer: </label>
-        <textarea name="answer" id="answer" cols="30" rows="10" maxlength="150"
+      <div class="form__answer">
+        <label class="form__label" for="answer">Your Answer: </label>
+        <textarea class="form__input" name="answer" id="answer" cols="30" rows="6" maxlength="150"
           placeholder="Write the answer"></textarea>
-        <p>150 characters left</p>
+        <p class="form__char-indicator">150 characters left</p>
       </div>
 
-      <div>
-        <label for="tag">Tags:</label>
-        <input type="text" id="tag" name="tags" placeholder="#example" />
+      <div class="form__tags">
+        <label class="form__label" for="tag">Tags:</label>
+        <input class="form__input" type="text" id="tag" name="tags" placeholder="#example" />
       </div>
 
-      <button type="submit">Create Question</button>
+      <button class="form__button" type="submit">Create Question</button>
     </form>
 
   </main>
