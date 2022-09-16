@@ -8,33 +8,30 @@ const questionCharIndicator = document.getElementById(
 );
 const answerCharIndicator = document.getElementById("answer-char-indicator");
 
-// function charIndicatorHandler(input, indicator) {
-//   const maxLength = input.maxLength;
-//   const enteredValueLength = input.value.length;
+// Handles color of questionCharIndicator and answerCharIndicator
 
-//   indicator.textContent = `${maxLength - enteredValueLength} characters left`;
-// }
+const charIndicatorHandler = (input, indicator) => {
+  const maxLength = input.maxLength;
+  const inputTextLength = input.value.length;
+  const charsLeft = maxLength - inputTextLength;
 
-// questionInput.addEventListener(
-//   "input",
-//   charIndicatorHandler(questionInput, questionCharIndicator)
-// );
-// answerInput.addEventListener(
-//   "input",
-//   charIndicatorHandler(answerInput, answerCharIndicator)
-// );
+  indicator.textContent = `${charsLeft} characters left`;
+
+  charsLeft === 0
+    ? (indicator.style.color = "#ff312e")
+    : charsLeft >= 1 && charsLeft <= 20
+    ? (indicator.style.color = "#ff9505")
+    : (indicator.style.color = "#1c572a");
+};
 
 questionInput.addEventListener("input", () => {
-  questionCharIndicator.textContent = `
-      ${questionInput.maxLength - questionInput.value.length} characters left
-      `;
+  charIndicatorHandler(questionInput, questionCharIndicator);
+});
+answerInput.addEventListener("input", () => {
+  charIndicatorHandler(answerInput, answerCharIndicator);
 });
 
-answerInput.addEventListener("input", () => {
-  answerCharIndicator.textContent = `
-        ${answerInput.maxLength - answerInput.value.length} characters left
-        `;
-});
+// Handles form when submitting
 
 const submitHandler = (event) => {
   event.preventDefault();
@@ -44,11 +41,17 @@ const submitHandler = (event) => {
 
   createCard(data);
 
-  console.log(data);
+  questionInput.value = "";
+  answerInput.value = "";
+
+  questionCharIndicator.textContent = `${questionInput.maxLength} characters left`;
+  answerCharIndicator.textContent = `${answerInput.maxLength} characters left`;
+
   form.reset();
   event.target.elements.question.focus();
 };
 
+// Creates html for card
 const createCard = (dataObject) => {
   const card = document.createElement("div");
   const cardQuestion = document.createElement("p");
