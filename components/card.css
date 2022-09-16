@@ -66,6 +66,11 @@
 
 .card__answer {
   color: #1c572a;
+  visibility: hidden;
+}
+
+.card__answer--shown {
+  visibility: visible;
 }
 
 .card__category {
