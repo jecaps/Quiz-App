@@ -64,6 +64,10 @@
   transform: scale(0.95);
 }
 
+.card__answer {
+  color: #1c572a;
+}
+
 .card__category {
   padding: 0;
   margin: 2rem 0 0 0;
