@@ -1,0 +1,11 @@
+.form__char-indicator {
+  color: #1c572a;
+}
+
+.form__char-indicator--few {
+  color: #ff9505;
+}
+
+.form__char-indicator--none {
+  color: #ff312e;
+}
