@@ -1,6 +1,40 @@
 const form = document.querySelector('[data-js="form"]');
 const main = document.querySelector('[data-js="main"]');
 const button = document.querySelector("button");
+const questionInput = document.getElementById("question");
+const answerInput = document.getElementById("answer");
+const questionCharIndicator = document.getElementById(
+  "question-char-indicator"
+);
+const answerCharIndicator = document.getElementById("answer-char-indicator");
+
+// function charIndicatorHandler(input, indicator) {
+//   const maxLength = input.maxLength;
+//   const enteredValueLength = input.value.length;
+
+//   indicator.textContent = `${maxLength - enteredValueLength} characters left`;
+// }
+
+// questionInput.addEventListener(
+//   "input",
+//   charIndicatorHandler(questionInput, questionCharIndicator)
+// );
+// answerInput.addEventListener(
+//   "input",
+//   charIndicatorHandler(answerInput, answerCharIndicator)
+// );
+
+questionInput.addEventListener("input", () => {
+  questionCharIndicator.textContent = `
+      ${questionInput.maxLength - questionInput.value.length} characters left
+      `;
+});
+
+answerInput.addEventListener("input", () => {
+  answerCharIndicator.textContent = `
+        ${answerInput.maxLength - answerInput.value.length} characters left
+        `;
+});
 
 const submitHandler = (event) => {
   event.preventDefault();
@@ -23,7 +57,6 @@ const createCard = (dataObject) => {
   const cardCategory = document.createElement("ul");
 
   card.classList.add("card");
-
   card.innerHTML = `
   <svg class="card__bookmark" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="25" height="25"
   viewBox="0 0 30 30">
