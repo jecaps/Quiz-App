@@ -44,8 +44,8 @@ const submitHandler = (event) => {
   questionInput.value = "";
   answerInput.value = "";
 
-  questionCharIndicator.textContent = `${questionInput.maxLength} characters left`;
-  answerCharIndicator.textContent = `${answerInput.maxLength} characters left`;
+  questionCharIndicator.textContent = "";
+  answerCharIndicator.textContent = "";
 
   form.reset();
   event.target.elements.question.focus();
