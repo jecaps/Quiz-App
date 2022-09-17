@@ -19,27 +19,30 @@
 
   <main data-js="main">
 
-    <form action="/" data-js="form">
-      <div class="form__question">
-        <label class="form__label" for="question">Your Question: </label>
-        <textarea class="form__input" name="question" id="question" cols="30" rows="6" maxlength="150"
-          placeholder="Write a question"></textarea>
-        <p class="form__char-indicator" id="question-char-indicator"></p>
-      </div>
+    <form action="/" data-js="form" class="form">
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Create New Question</legend>
 
-      <div class="form__answer">
-        <label class="form__label" for="answer">Your Answer: </label>
-        <textarea class="form__input" name="answer" id="answer" cols="30" rows="6" maxlength="150"
-          placeholder="Write the answer"></textarea>
-        <p class="form__char-indicator" id="answer-char-indicator"></p>
-      </div>
+        <div class="form__question">
+          <label class="form__label" for="question">Your Question: </label>
+          <textarea class="form__input" name="question" id="question" cols="30" rows="6" maxlength="150"
+            placeholder="Write a question"></textarea>
+          <p class="form__char-indicator" id="question-char-indicator"></p>
+        </div>
 
-      <div class="form__tags">
-        <label class="form__label" for="tag">Tags:</label>
-        <input class="form__input" type="text" id="tag" name="tags" placeholder="#example" />
-      </div>
+        <div class="form__answer">
+          <label class="form__label" for="answer">Your Answer: </label>
+          <textarea class="form__input" name="answer" id="answer" cols="30" rows="6" maxlength="150"
+            placeholder="Write the answer"></textarea>
+          <p class="form__char-indicator" id="answer-char-indicator"></p>
+        </div>
 
-      <button class="form__button" type="submit">Create Question</button>
+        <div class="form__tags">
+          <label class="form__label" for="tag">Tags:</label>
+          <input class="form__input" type="text" id="tag" name="tags" placeholder="#example" />
+        </div>
+        <button class="form__button" type="submit">Create Question</button>
+      </fieldset>
     </form>
 
   </main>
