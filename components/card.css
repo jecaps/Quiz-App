@@ -95,6 +95,20 @@
   padding: 0.25rem 0.5rem;
 }
 
+@media (min-width: 768px) {
+  .card__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card__container {
+    width: 1024px;
+    margin: auto;
+  }
+}
+
 @keyframes shake {
   0% {
     transform: rotate(0deg);
