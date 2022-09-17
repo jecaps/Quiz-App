@@ -24,9 +24,16 @@ body {
   scrollbar-width: none;
 }
 
-/* @media (min-width: 768px) {
+@media (min-width: 768px) {
   main {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-} */
+}
+
+@media (min-width: 1024px) {
+  main {
+    width: 1024px;
+    margin: auto;
+  }
+}
