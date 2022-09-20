@@ -1,3 +1,5 @@
+import { toggleBookmark, toggleAnswer } from "./components/card/card.js";
+
 function handleSubmit() {
   const form = document.querySelector('[data-js="form"]');
 
@@ -13,15 +15,15 @@ function handleSubmit() {
   });
 }
 
-function toggleBookmark() {
-  const bookmarks = document.querySelectorAll("[data-js='bookmark']");
+// function toggleBookmark() {
+//   const bookmarks = document.querySelectorAll("[data-js='bookmark']");
 
-  bookmarks.forEach((bookmark) => {
-    bookmark.addEventListener("click", () => {
-      bookmark.classList.toggle("card__bookmark--marked");
-    });
-  });
-}
+//   bookmarks.forEach((bookmark) => {
+//     bookmark.addEventListener("click", () => {
+//       bookmark.classList.toggle("card__bookmark--marked");
+//     });
+//   });
+// }
 
 function countCharactersLeft() {
   const questionInput = document.getElementById("question");
@@ -53,21 +55,21 @@ function countCharactersLeft() {
   });
 }
 
-function toggleAnswer() {
-  const cardElements = document.querySelectorAll(".card");
+// function toggleAnswer() {
+//   const cardElements = document.querySelectorAll(".card");
 
-  cardElements.forEach((card) => {
-    const answerButton = card.querySelector(".card__btn");
-    const answer = card.querySelector(".card__answer");
+//   cardElements.forEach((card) => {
+//     const answerButton = card.querySelector(".card__btn");
+//     const answer = card.querySelector(".card__answer");
 
-    answerButton.addEventListener("click", () => {
-      answer.classList.toggle("card__answer--shown");
-      answerButton.textContent === "Show Answer"
-        ? (answerButton.textContent = "Hide Answer")
-        : (answerButton.textContent = "Show Answer");
-    });
-  });
-}
+//     answerButton.addEventListener("click", () => {
+//       answer.classList.toggle("card__answer--shown");
+//       answerButton.textContent === "Show Answer"
+//         ? (answerButton.textContent = "Hide Answer")
+//         : (answerButton.textContent = "Show Answer");
+//     });
+//   });
+// }
 
 const createCard = (dataObject) => {
   const cardList = document.querySelector('[data-js="form-card-list"]');
