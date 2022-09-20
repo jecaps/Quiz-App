@@ -24,21 +24,33 @@ function toggleBookmark() {
 }
 
 function countCharactersLeft() {
-  const formFields = document.querySelectorAll('[data-js*="input"]');
-  const counterOutputs = document.querySelectorAll("[data-js*=amount-left]");
+  const questionInput = document.getElementById("question");
+  const answerInput = document.getElementById("answer");
+  const questionCharIndicator = document.getElementById(
+    "question-char-indicator"
+  );
+  const answerCharIndicator = document.getElementById("answer-char-indicator");
 
-  formFields.forEach((formField, index) => {
-    counterOutputs.forEach((output) => {
-      output.innerText = formField.maxLength;
-    });
-    formField.addEventListener("input", () => {
-      const currentAmountLeft = formField.maxLength - formField.value.length;
-      updateAmount(currentAmountLeft, index);
-    });
+  const charIndicatorHandler = (input, indicator) => {
+    const maxLength = input.maxLength;
+    const inputTextLength = input.value.length;
+    const charsLeft = maxLength - inputTextLength;
+
+    indicator.textContent = `${charsLeft} characters left`;
+
+    charsLeft === 0
+      ? (indicator.style.color = "#ff312e")
+      : charsLeft >= 1 && charsLeft <= 20
+      ? (indicator.style.color = "#ff9505")
+      : (indicator.style.color = "#1c572a");
+  };
+
+  questionInput.addEventListener("input", () => {
+    charIndicatorHandler(questionInput, questionCharIndicator);
   });
-  function updateAmount(value, index) {
-    counterOutputs[index].innerText = value;
-  }
+  answerInput.addEventListener("input", () => {
+    charIndicatorHandler(answerInput, answerCharIndicator);
+  });
 }
 
 function toggleAnswer() {
